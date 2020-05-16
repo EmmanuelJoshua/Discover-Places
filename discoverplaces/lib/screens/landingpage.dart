@@ -64,25 +64,21 @@ class _LandingPageState extends State<LandingPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-//                    Padding(
-//                      padding: EdgeInsets.only(top: 25) ,
-//                      child: Text(
-//                        'Read more',
-//                        style: leadlines2,
-//                      )
-//                    ),
                     Expanded(
                       child: FloatingActionButton.extended(
                         onPressed: () {
-                          var router =
-                          MaterialPageRoute(builder: (BuildContext context) => HomePage());
+                          var router = MaterialPageRoute(
+                              builder: (BuildContext context) => HomePage());
 
                           Navigator.of(context).push(router);
                         },
-                          backgroundColor: buttonColor,
+                        backgroundColor: buttonColor,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12)),
-                        label: Text('Get Started', style: buttonText,),
+                        label: Text(
+                          'Get Started',
+                          style: buttonText,
+                        ),
                       ),
                     )
                   ],
